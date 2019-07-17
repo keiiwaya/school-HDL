@@ -1,0 +1,137 @@
+$date
+	Mon Jun 17 16:11:21 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module test_lu $end
+$var wire 8 ! y [7:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$var reg 2 $ op [1:0] $end
+$scope module l0 $end
+$var wire 8 % a [7:0] $end
+$var wire 8 & b [7:0] $end
+$var wire 2 ' op [1:0] $end
+$var wire 8 ( w0 [7:0] $end
+$var wire 8 ) w1 [7:0] $end
+$var wire 8 * w2 [7:0] $end
+$var wire 8 + w3 [7:0] $end
+$var wire 8 , y [7:0] $end
+$scope module a0 $end
+$var wire 8 - a [7:0] $end
+$var wire 8 . b [7:0] $end
+$var reg 8 / y [7:0] $end
+$upscope $end
+$scope module o0 $end
+$var wire 8 0 a [7:0] $end
+$var wire 8 1 b [7:0] $end
+$var reg 8 2 y [7:0] $end
+$upscope $end
+$scope module x0 $end
+$var wire 8 3 a [7:0] $end
+$var wire 8 4 b [7:0] $end
+$var reg 8 5 y [7:0] $end
+$upscope $end
+$scope module n0 $end
+$var wire 8 6 a [7:0] $end
+$var wire 8 7 b [7:0] $end
+$var reg 8 8 y [7:0] $end
+$upscope $end
+$scope module m0 $end
+$var wire 8 9 a [7:0] $end
+$var wire 8 : b [7:0] $end
+$var wire 8 ; c [7:0] $end
+$var wire 8 < d [7:0] $end
+$var wire 2 = s [1:0] $end
+$var reg 8 > y [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 >
+b0 =
+b11111100 <
+b11 ;
+b11 :
+b0 9
+b11111100 8
+b10 7
+b1 6
+b11 5
+b10 4
+b1 3
+b11 2
+b10 1
+b1 0
+b0 /
+b10 .
+b1 -
+b0 ,
+b11111100 +
+b11 *
+b11 )
+b0 (
+b0 '
+b10 &
+b1 %
+b0 $
+b10 #
+b1 "
+b0 !
+$end
+#10
+b11 >
+b11 !
+b11 ,
+b1 $
+b1 '
+b1 =
+#20
+b10 $
+b10 '
+b10 =
+#30
+b11111100 >
+b11111100 !
+b11111100 ,
+b11 $
+b11 '
+b11 =
+#40
+bx >
+bx !
+bx ,
+bx /
+bx (
+bx 9
+bx 2
+bx )
+bx :
+bx 5
+bx *
+bx ;
+bx 8
+bx +
+bx <
+bx $
+bx '
+bx =
+bx #
+bx &
+bx .
+bx 1
+bx 4
+bx 7
+bx "
+bx %
+bx -
+bx 0
+bx 3
+bx 6
+#50

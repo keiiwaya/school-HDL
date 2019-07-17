@@ -1,0 +1,11 @@
+`timescale 1ns/1ns
+
+module lu(a, b, op, y);
+	input  [7:0] a, b;
+	input  [1:0] op;
+	output [7:0] y;
+	/* 以下を記述 */
+
+	/* ここまで */
+	
+endmodule

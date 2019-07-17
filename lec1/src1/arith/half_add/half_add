@@ -1,0 +1,63 @@
+#! /usr/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 9;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x24af920 .scope module, "test_half_add" "test_half_add" 2 3;
+ .timescale -9 -9;
+v0x24e48f0_0 .var "a", 0 0;
+v0x24e4990_0 .var "b", 0 0;
+v0x24e4a40_0 .net "co", 0 0, L_0x24e4f60; 1 drivers
+v0x24e4af0_0 .net "s", 0 0, L_0x24e4e10; 1 drivers
+S_0x24af5a0 .scope module, "a0" "half_add" 2 8, 3 3, S_0x24af920;
+ .timescale -9 -9;
+L_0x24e4bd0 .functor AND 1, v0x24e48f0_0, v0x24e4990_0, C4<1>, C4<1>;
+L_0x24e4d00 .functor NOT 1, L_0x24e4bd0, C4<0>, C4<0>, C4<0>;
+L_0x24e4db0 .functor OR 1, v0x24e48f0_0, v0x24e4990_0, C4<0>, C4<0>;
+L_0x24e4e10 .functor AND 1, L_0x24e4d00, L_0x24e4db0, C4<1>, C4<1>;
+L_0x24e4f60 .functor BUFZ 1, L_0x24e4bd0, C4<0>, C4<0>, C4<0>;
+v0x24afd00_0 .net "a", 0 0, v0x24e48f0_0; 1 drivers
+v0x24e44e0_0 .net "b", 0 0, v0x24e4990_0; 1 drivers
+v0x24e4580_0 .alias "co", 0 0, v0x24e4a40_0;
+v0x24e4620_0 .alias "s", 0 0, v0x24e4af0_0;
+v0x24e46d0_0 .net "w0", 0 0, L_0x24e4bd0; 1 drivers
+v0x24e4770_0 .net "w1", 0 0, L_0x24e4d00; 1 drivers
+v0x24e4850_0 .net "w2", 0 0, L_0x24e4db0; 1 drivers
+    .scope S_0x24af920;
+T_0 ;
+    %vpi_call 2 12 "$dumpfile", "half_add.vcd";
+    %vpi_call 2 13 "$dumpvars", 1'sb0, S_0x24af920;
+    %end;
+    .thread T_0;
+    .scope S_0x24af920;
+T_1 ;
+    %vpi_call 2 18 "$monitor", $time, " ", "a=%b b=%b co=%b s=%b", v0x24e48f0_0, v0x24e4990_0, v0x24e4a40_0, v0x24e4af0_0;
+    %end;
+    .thread T_1;
+    .scope S_0x24af920;
+T_2 ;
+    %set/v v0x24e48f0_0, 0, 1;
+    %set/v v0x24e4990_0, 0, 1;
+    %delay 10, 0;
+    %set/v v0x24e48f0_0, 0, 1;
+    %set/v v0x24e4990_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x24e48f0_0, 1, 1;
+    %set/v v0x24e4990_0, 0, 1;
+    %delay 10, 0;
+    %set/v v0x24e48f0_0, 1, 1;
+    %set/v v0x24e4990_0, 1, 1;
+    %delay 10, 0;
+    %set/v v0x24e48f0_0, 2, 1;
+    %set/v v0x24e4990_0, 2, 1;
+    %delay 10, 0;
+    %vpi_call 2 33 "$finish";
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "test_half_add.v";
+    "half_add.v";

@@ -1,0 +1,83 @@
+\documentclass[11pt,a4j,twocolumn]{jarticle}
+\usepackage{graphicx}
+
+% 設問(a)に関する解答はこれより下に記すこと。
+\title{情報リテラシー}
+\author{1821013　岩谷　慶}
+\date{\today}
+
+
+% 設問(a)に関する解答はこれより上に記すこと。
+
+\begin{document}
+
+\maketitle
+
+
+\section{箇条書きの問題}
+% 設問(b)に関する解答はこれより下に記すこと。
+知識工学部には以下のような学科があります。\\
+\begin{itemize}
+\item 情報科学
+\item 情報通信学
+\item 経営システム工学
+\item 自然科学
+\end{itemize}
+
+  
+
+
+% 設問(b)に関する解答はこれより上に記すこと。
+
+\section{数式の問題}
+% 設問(c)に関する解答はこれより下に記すこと。
+2次方程式 $ ax^{2}+bx+c=0 $の解は次式で与えられます。\\
+\begin{eqnarray}
+  x_1 & = & \frac{-b + \sqrt{b^2 - 4ac}}{2a} \\
+  x_2 & = & \frac{-b + \sqrt{b^2 - 4ac}}{2a} 
+%\sqrt{y+z}
+\end{eqnarray}
+
+% 設問(c)に関する解答はこれより上に記すこと。
+
+\section{図の貼付の問題}
+% 設問(d)に関する解答はこれより下に記すこと。
+図\ref{figure1}に示すのは、東京都市大学のマスコットです。
+\begin{figure}[t]
+\begin{center}
+\includegraphics[width=55mm]{mascot.eps}
+\end{center}
+\caption{大学マスコット}
+\label{figure1}
+\end{figure}
+
+% 設問(d)に関する解答はこれより上に記すこと。
+
+\section{表作成の問題}
+% 設問(e)に関する解答はこれより下に記すこと。
+表\ref{table1}に示すのは、卒業までの単位取得目安数です。
+
+\begin{table}[h]
+\caption{単位取得目安}
+\label{table1}
+\begin{center}
+  \begin{tabular}{|l|c|c|c|c|}\hline
+     &１年　&　２年　&　３年　&　４年 \\ \hline
+    単位数 & ４０ & ８０ & １２０ & １２６ \\  \hline 
+\end{tabular}
+\end{center}
+\end{table}
+
+% 設問(e)に関する解答はこれより上に記すこと。
+
+\section{参考文献の問題}
+% 設問(f)に関する解答はこれより下に記すこと。
+東京都市大学にはYouTubeに公式アカウント\cite{ref1}があります。\\
+
+\begin{thebibliography}{9}
+\bibitem{ref1}都市大公式,https://www.youtube.com/tcu104
+\end{thebibliography}
+
+% 設問(f)に関する解答はこれより上に記すこと。
+
+\end{document}

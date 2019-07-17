@@ -1,0 +1,244 @@
+\documentclass[12pt,a4j]{jarticle}
+%\documentclass[12pt,a4j,twocolumn]{jarticle}
+
+%%%%%%%%%%%%%%%%%%%%
+\iffalse
+\topmargin      -15mm
+\oddsidemargin  -15mm
+\evensidemargin -15mm
+\textwidth    180mm
+\textheight   230mm
+\fi
+%%%%%%%%%%%%%%%%%%%%
+
+\title{TeX のコマンドについて}
+\author{1821000 岩谷　慶}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+%この部分は表示されせん
+
+\iffalse
+複数行がまとめてコメントアウトされます。
+この部分を表示させる場合は、
+前後にあるコマンド（if, fi）の行を削除するか、
+これらのコマンド自体をコメントアウトさせます。
+\fi
+
+\section{フォントの書体}
+\hfill
+{\rmfamily Roman }\par
+{\sffamily Sans serif }\par
+{\ttfamily Typewriter }\par
+{\mcfamily 明朝体 }\par
+{\gtfamily ゴシック体 }\par
+{\mdseries Midiumface }\par
+{\bfseries Boldface }\par
+{\itshape Italic }\par
+{\slshape Slanted }\par
+{\scshape SMALL CAPS }\par
+{\normalfont Normal Font }
+%\newpage
+\section{フォントの大きさ}
+\vfill
+{\tiny テキスト}\par
+{\scriptsize テキスト}\par
+{\footnotesize テキスト}\par
+{\small テキスト}\par
+{\normalsize テキスト}\par
+{\large テキスト}\par
+{\Large テキスト}\par
+{\LARGE テキスト}\par
+{\huge テキスト}\par
+{\Huge テキスト}
+
+\section{文字の配置}
+
+\begin{flushright}
+右揃え
+\end{flushright}
+
+\begin{flushleft}
+左揃え
+\end{flushleft}
+
+\begin{center}
+中央揃え
+\end{center}
+
+\section{箇条書き}
+
+\subsection{記号付箇条書き}
+
+\begin{itemize}
+\item テキスト１
+\item テキスト２
+\end{itemize}
+
+\subsection{番号付箇条書き}
+\begin{enumerate}
+\item テキスト１
+\item テキスト２
+\end{enumerate}
+
+\subsection{見出し付箇条書き}
+\begin{description}
+\item[見出し１]テキスト１
+\item[見出し２]テキスト２
+\end{description}
+
+\section{verbatim環境}
+
+特殊記号を本文中に表示\\
+
+\verb+\begin{verbatim}+ テキスト \verb+\end{verbatim}+ \\
+
+特殊記号を別行で表示\\
+
+\begin{verbatim}
+
+\include<stdio.h>
+
+int main(void){
+
+  int x, y;
+
+  y = 2 * x;
+  printf( "x = %d, y = %d\n", x, y );
+
+  return 0;
+}
+
+\end{verbatim}
+
+\section{数式}
+
+\subsection{数式環境}
+
+数式を本文中に記述 $ f(x_n)=\frac{1}{4}x_n^2 $\par
+分数を大きく表示 $ f(x_n)=\displaystyle\frac{1}{4}x_n^2 $\\
+
+数式を別行で記述（数式番号あり）
+\begin{eqnarray}
+y = x^2 + x + 1
+\end{eqnarray}
+
+数式を別行で記述（数式番号なし）
+
+\[
+y = x^2 + x + 1
+\]
+
+記号揃え（数式番号あり）
+\begin{eqnarray}
+y & = & x^2 + x   + 1 \\
+z & = & x^3 + x^2 + x
+\end{eqnarray}
+
+記号揃え（数式番号なし）
+\begin{eqnarray*}
+y & = & x^2 + x   + 1 \\
+z & = & x^3 + x^2 + x
+\end{eqnarray*}
+
+\subsection{array環境}
+
+\[
+	\begin{array}{ccc}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{array}
+\]
+
+\[
+	(
+	\begin{array}{ccc}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{array}
+	)
+\]
+
+\[
+	\left(
+	\begin{array}{ccc}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{array}
+	\right)
+\]
+
+\[
+	\left[
+	\begin{array}{ccc}
+		a_{11} & a_{12} & a_{13} \\
+		a_{21} & a_{22} & a_{23} \\
+		a_{31} & a_{32} & a_{33}
+	\end{array}
+	\right]
+\]
+
+\subsection{様々な記号}
+ギリシャ文字
+\[
+\begin{array}{cccccccc}
+\alpha      & \beta     & \gamma  & \delta   & \epsilon  & \zeta   & \eta & \theta  \\
+\iota       & \kappa    & \lambda & \mu      & \nu       & \xi     & o    & \pi     \\
+\rho        & \sigma    & \tau    & \upsilon & \phi      & \chi    & \psi & \omega  \\
+\varepsilon & \vartheta & \varpi  & \varrho  & \varsigma & \varphi &      &
+\end{array}
+\]
+
+2項演算子
+\[
+\begin{array}{ccccccc}
+\pm & \mp &\times & \div & \ast & \circ & \cdot \\
+\cap & \cup & \vee & \wedge & \setminus \\
+\oplus & \ominus & \otimes & \oslash & \odot \\
+\end{array}
+\]
+
+関係演算子
+\[
+\begin{array}{cccccccc}
+\le & \ll & \subset & \subseteq & \vdash & \in & \notin \\
+\ge & \gg & \supset & \supseteq & \dashv & \ni \\
+\equiv & \neq & \propto &
+\sim & \simeq & \approx & \cong & \doteq \\
+\end{array}
+\]
+
+矢印
+\[
+\begin{array}{cccccccc}
+\leftarrow & \Leftarrow & \rightarrow & \Rightarrow & \leftrightarrow & \Leftrightarrow & \mapsto \\
+\end{array}
+\]
+
+雑記号
+\[
+\begin{array}{cccccccc}
+\Re & \Im & \partial & \angle & \infty & \forall & \exists & \neg
+\end{array}
+\]
+
+関数
+\[
+\sin x \quad \cos x \quad \tan x
+\] \[
+\sinh x \quad \cosh x \quad \tanh x
+\] \[
+\log x \quad \ln x \quad \exp x
+\] \[
+\lim_{n \rightarrow \infty} a_n \quad \max_n a_n \quad \min_n a_n 
+\] \[
+\sum_{i=1}^{N} x_i \quad \int_{0}^{\infty} f(x) dx \quad m \bmod n
+\]
+
+\end{document}

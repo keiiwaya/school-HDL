@@ -1,0 +1,12 @@
+VCD info: dumpfile mul.vcd opened for output.
+                   0 xxxxxxxx xxxx xxxxxxxx
+                  10 00001101 1011 xxxxxxxx
+                  30 00001101 0101 xxxxxxxx
+                  50 xxx11010 0101 xxxxxxxx
+                  70 00001101 0101 xxxxxxxx
+                  90 xxx11010 0101 xxxxxxxx
+                 110 00001101 1011 xxxxxxxx
+                 150 00001101 0101 xxxxxxxx
+                 170 xxx11010 0101 xxxxxxxx
+                 190 00001101 0101 xxxxxxxx
+

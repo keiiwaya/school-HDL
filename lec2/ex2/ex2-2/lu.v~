@@ -1,0 +1,20 @@
+`timescale 1ns/1ns
+
+module lu(a, b, op, y);
+   input  [7:0] a, b;
+   input [1:0] 	op;
+   output [7:0] y;
+   /* 以下を記述 */
+   wire [7:0] 	w0, w1;
+   
+   andl a0(.a(a), .b(b), .y(a));
+   orl o0(.a(a), .b(b), .y(b));
+   xorl x0(.a(a), .b(b), .y(w0));
+   norl n0(.a(a), .b(b), .y(w1));
+
+   mux4 m0(.a(a), .b(b), .c(w0), .d(w1), .s(op), .y(y));
+
+ 
+   /* ここまで */
+   
+endmodule

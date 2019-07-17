@@ -1,0 +1,9 @@
+module lu(y, a, b, op);
+   input [7:0] a, b;
+   input [1:0] op;
+
+   output [7:0] y;
+
+   reg [7:0] 	y;
+
+   

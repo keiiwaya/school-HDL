@@ -1,0 +1,6 @@
+VCD info: dumpfile cmp8.vcd opened for output.
+                   0 a=10000000 b=10000000 ci=1 gt=0 lt=0 eq=1
+                  10 a=00000001 b=10000000 ci=1 gt=0 lt=1 eq=0
+                  20 a=11111111 b=01111111 ci=1 gt=1 lt=0 eq=0
+                  30 a=xxxxxxxx b=xxxxxxxx ci=x gt=x lt=x eq=x
+

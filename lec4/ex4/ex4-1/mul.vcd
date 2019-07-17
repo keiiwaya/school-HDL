@@ -1,0 +1,158 @@
+$date
+	Mon Jul  8 13:31:35 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module test_mul $end
+$var wire 8 ! y [7:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % ld $end
+$scope module u0 $end
+$var wire 4 & a [3:0] $end
+$var wire 4 ' b [3:0] $end
+$var wire 1 ( clk $end
+$var wire 1 ) ld $end
+$var wire 8 * y [7:0] $end
+$var reg 8 + ra [7:0] $end
+$var reg 4 , rb [3:0] $end
+$var reg 8 - ry [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx -
+bx ,
+bx +
+bx *
+0)
+0(
+b1011 '
+b1101 &
+0%
+0$
+b1011 #
+b1101 "
+bx !
+$end
+#10
+b1101 +
+b1011 ,
+b0 -
+b0 !
+b0 *
+1%
+1)
+1$
+1(
+#20
+0$
+0(
+#30
+b1101 -
+b1101 !
+b1101 *
+b101 ,
+b11010 +
+1$
+1(
+0%
+0)
+#40
+0$
+0(
+#50
+b110100 +
+b10 ,
+b100111 -
+b100111 !
+b100111 *
+1$
+1(
+#60
+0$
+0(
+#70
+b1 ,
+b1101000 +
+1$
+1(
+#80
+0$
+0(
+#90
+b11010000 +
+b0 ,
+b10001111 -
+b10001111 !
+b10001111 *
+1$
+1(
+#100
+0$
+0(
+1%
+1)
+#110
+b0 -
+b0 !
+b0 *
+b1011 ,
+b1101 +
+1$
+1(
+#120
+0$
+0(
+#130
+1$
+1(
+#140
+0$
+0(
+#150
+b1101 -
+b1101 !
+b1101 *
+b101 ,
+b11010 +
+1$
+1(
+0%
+0)
+#160
+0$
+0(
+#170
+b110100 +
+b10 ,
+b100111 -
+b100111 !
+b100111 *
+1$
+1(
+#180
+0$
+0(
+#190
+b1 ,
+b1101000 +
+1$
+1(
+#200
+0$
+0(
+#210
+b11010000 +
+b0 ,
+b10001111 -
+b10001111 !
+b10001111 *
+1$
+1(

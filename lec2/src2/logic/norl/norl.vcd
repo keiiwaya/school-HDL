@@ -1,0 +1,47 @@
+$date
+	Mon Jun 17 14:36:18 2019
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module test_norl $end
+$var wire 8 ! y [7:0] $end
+$var reg 8 " a [7:0] $end
+$var reg 8 # b [7:0] $end
+$scope module n0 $end
+$var wire 8 $ a [7:0] $end
+$var wire 8 % b [7:0] $end
+$var reg 8 & y [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1111 &
+b0 %
+b11110000 $
+b0 #
+b11110000 "
+b1111 !
+$end
+#10
+b0 &
+b0 !
+b11111111 #
+b11111111 %
+#20
+b101 &
+b101 !
+b10101010 #
+b10101010 %
+#30
+bx &
+bx !
+bx #
+bx %
+bx "
+bx $
+#40

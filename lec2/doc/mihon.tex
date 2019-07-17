@@ -1,0 +1,95 @@
+\documentclass[10pt,a4j,twocolumn]{jarticle}
+\usepackage{graphicx}
+
+\title{情報リテラシー期末試験答案}
+\author{1821000 東京都市太郎}
+\date{平成30年5月28日}
+
+\begin{document}
+\maketitle
+
+\section{箇条書きの問題}
+
+\begin{description}
+\item [予定] オープンキャンパス
+\item [日時] 6/17
+\item [場所] 世田谷キャンパス
+\end{description}
+
+\section{図の貼付の問題}
+
+建設が終わった新6号館の外観を図\ref{fig:b6}に示す。
+
+\begin{figure}[h]
+\begin{center}
+\includegraphics[width=60mm]{build6.eps}
+\end{center}
+\caption{新6号館}
+\label{fig:b6}
+\end{figure}
+
+\section{表作成の問題}
+
+情報科学科の各学年の在籍者を表\ref{tb:cs}に示す。
+
+\begin{table}[h]
+\caption{学科在籍者}
+\label{tb:cs}
+\begin{center}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+      &  一年  & 二年 & 三年 & 四年 \\ \hline  
+情科  & 132    & 133  & 100  &  89 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{数式の問題1}
+
+$(x+1)^2=x^2+2x+1$は真である。
+
+\section{数式の問題2}
+
+以下に積分式を示す。
+\[
+ \int_{0}^{1}(x^2 + 1)dx = 1.33...
+\]
+
+\section{数式の問題3}
+
+抵抗値$R_{1}$と$R_{2}$の２つの抵抗を並列に接続するとき、合成抵抗$R$は式(\ref{eq:r})で表される。
+
+\begin{eqnarray}
+ \frac{1}{R} = \frac{1}{R_1} + \frac{1}{R_2}
+ \label{eq:r}
+\end{eqnarray}
+
+\section{参考文献の問題}
+
+文献\cite{bibunsho}、\cite{Okumura}の著者は奥村晴彦である。
+
+{\footnotesize
+\begin{thebibliography}{9}
+
+\bibitem{ohno}
+大野義夫編，
+\TeX\ 入門，
+共立出版，1989.
+
+\bibitem{nodera1}
+野寺隆志，
+楽々\LaTeX{}，
+共立出版，1990. 
+
+\bibitem{bibunsho}
+奥村晴彦，\LaTeX\ 美文書作成入門，
+技術評論社，1991. 
+
+\bibitem{Okumura}
+奥村晴彦，［改訂版］\LaTeXe\ 美文書作成入門，
+技術評論社，東京，2000.
+
+\end{thebibliography}
+}
+\end{document}
